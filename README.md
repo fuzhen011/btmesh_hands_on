@@ -1,3 +1,10 @@
+## File list to be Provided
+
+- thunderboard folder to copy to hardware/kit/common/bsp
+- config folder to copy to hardware/kit/EFR32MG12_BRD4166A to replace the
+  existing one
+- lc_sensor.c/h
+
 ## TODO Check List
 
 ### Activities for both project
@@ -6,14 +13,20 @@
 
 ### Light
 
-- [x] Modify the BSP files to avoid the warning for redefine, check commit #7af42c2 for more details
+- [x] Modify the BSP files to avoid the warning for redefine, check commit
+      #7af42c2 for more details
 
 ### Switch
 
-- [] Add sensor server model to DCD, instructions needed.
+- [] Add "${workspace_loc:/${ProjName}/hardware/kit/common/bsp/thunderboard}" to
+  include paths
+- [] Add "${workspace_loc:/${ProjName}/hardware/kit/common/drivers}" to include
+  paths
+- [] Add sensor server model and sensor setup model to DCD, instructions needed.
 
   - placeholder for instructions
 
-- [] Add the lc_sensor.c/h pair
-  - [] Add the implementation for sensor sampling cause this shouldn't be part of the purposes of the training.
+- [x] Add the lc_sensor.c/h pair
+  - [] Add the implementation for sensor sampling cause this shouldn't be part
+    of the purposes of the training.
   - [] Add function prototype for sending the sensor messages to LC server
