@@ -1,0 +1,13 @@
+build
+utest/build
+/* utest/compile_commands.json */
+*.swp
+tags
+compile_commands.json
+a.out
+core
+cppcheck.xml
+.clangd
+.history
+.config
+.gdb*
