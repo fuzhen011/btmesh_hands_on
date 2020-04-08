@@ -1,3 +1,6 @@
 [submodule "hand_on_light"]
 	path = hand_on_light
 	url = https://github.com/fuzhen011/hand_on_light.git
+[submodule "hands_on_switch"]
+	path = hands_on_switch
+	url = https://github.com/fuzhen011/hands_on_switch.git
