@@ -18,9 +18,9 @@
 
 ### Switch
 
-- [] Add "${workspace_loc:/${ProjName}/hardware/kit/common/bsp/thunderboard}" to
+- [x] Add "${workspace_loc:/${ProjName}/hardware/kit/common/bsp/thunderboard}" to
   include paths
-- [] Add "${workspace_loc:/${ProjName}/hardware/kit/common/drivers}" to include
+- [x] Add "${workspace_loc:/${ProjName}/hardware/kit/common/drivers}" to include
   paths
 - [] Add sensor server model and sensor setup model to DCD, instructions needed.
 
