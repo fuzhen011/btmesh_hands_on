@@ -1,20 +1,33 @@
 ## File list to be Provided
 
-- thunderboard folder to copy to hardware/kit/common/bsp
-- config folder to copy to hardware/kit/EFR32MG12_BRD4166A to replace the
-  existing one
-- lc_sensor.c/h
-
 ## TODO Check List
 
-### Activities for both project
-
-- [x] Replace the libbluetooth.a library in the projects with the one provided
-
-### Light
+## Actions
 
 - [x] Modify the BSP files to avoid the warning for redefine, check commit
       #7af42c2 for more details
+- [x] Add "${workspace_loc:/${ProjName}/lab}" to the include path
+- [x] Replace the libbluetooth.a library in the projects with the one provided
+- [x] Remove the _gecko_bgapi_class_mesh_test_init();_ comment, then add below
+      lines under it.
+  ```c
+  gecko_bgapi_class_mesh_sensor_server_init();
+  gecko_bgapi_class_mesh_sensor_setup_server_init();
+  ```
+- [x] Add below lines to the app.c at the include paths area
+  ```c
+  #undef SUB_MODULE_NAME
+  #define SUB_MODULE_NAME "app"
+  #include "lab.h"
+  ```
+- [x] ?Add the self config function to the node initialized event.
+  ```c
+    self_config(pData);
+  ```
+- [] Remove the "ENABLE_LOGGING=1" from the Symbols setting
+  ```
+
+  ```
 
 ### Switch
 
