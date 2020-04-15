@@ -4,8 +4,16 @@
 
 ## Actions
 
+- [x] Add sensor server and sensor setup server models to DCD.
+  1. Open the ${PROJECT_NAME}.isc file.
+  2. Click the Composition Data label and choose the Primary Element.
+  3. Click the "+" button on the right of the "Bluetooth SIG Models" table to
+     add
+     - Sensor Server Model
+     - Sensor Setup Model
+  4. Save the file and click the "Generate" button on the top right corner.
 - [x] Modify the BSP files to avoid the warning for redefine, check commit
-      #7af42c2 for more details
+      \#7af42c2 for more details
 - [x] Add "${workspace_loc:/${ProjName}/lab}" to the include path
 - [x] Replace the libbluetooth.a library in the projects with the one provided
 - [x] Remove the _gecko_bgapi_class_mesh_test_init();_ comment, then add below
@@ -22,24 +30,21 @@
   ```
 - [x] ?Add the self config function to the node initialized event.
   ```c
-    self_config(pData);
+  self_config(pData);
   ```
 - [] Remove the "ENABLE_LOGGING=1" from the Symbols setting
-  ```
 
   ```
 
-### Switch
+  ```
 
-- [x] Add "${workspace_loc:/${ProjName}/hardware/kit/common/bsp/thunderboard}" to
-  include paths
-- [x] Add "${workspace_loc:/${ProjName}/hardware/kit/common/drivers}" to include
-  paths
-- [] Add sensor server model and sensor setup model to DCD, instructions needed.
+### Workaround
 
-  - placeholder for instructions
+The smartphone app can't configure the sensor models if the node functionality
+is set to "LC server". So, the node will bind the appkey(s) to the sensor server
+model when new appkey added event is triggered.
 
-- [x] Add the lc_sensor.c/h pair
-  - [] Add the implementation for sensor sampling cause this shouldn't be part
-    of the purposes of the training.
-  - [] Add function prototype for sending the sensor messages to LC server
+- [x] add below line to _gecko_evt_mesh_node_key_added_id_ handler
+  ```c
+  on_appkey_added(&evt->data);
+  ```
