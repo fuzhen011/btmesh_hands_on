@@ -1,0 +1,1 @@
+/home/zhfu/work/super/protocol/bluetooth/apps/ncp_mesh/build/efr32mg12p-gcc-full-debug/libbluetooth_mesh.a
