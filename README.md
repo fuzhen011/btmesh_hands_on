@@ -1,3 +1,11 @@
+## Presenter & Proctor
+
+| Region | Presenter | Proctor 1 | Proctor 2 |
+| ------ | --------- | --------- | --------- |
+| APAC   | Kevin     | Steve     | -         |
+| EMAR   | Kevin     | Badiss    | -         |
+| AMER   | Steve     | Badiss    | -         |
+
 ## File list to be Provided
 
 ## TODO Check List
@@ -5,7 +13,7 @@
 ## Actions
 
 - [x] Add sensor server and sensor setup server models to DCD.
-  1. Open the ${PROJECT_NAME}.isc file.
+  1. Open the \${PROJECT_NAME}.isc file.
   2. Click the Composition Data label and choose the Primary Element.
   3. Click the "+" button on the right of the "Bluetooth SIG Models" table to
      add
