@@ -1,1 +1,2 @@
 /home/zhfu/work/super/protocol/bluetooth/apps/ncp_mesh/build/efr32mg12p-gcc-full-debug/libbluetooth_mesh.a
+"${workspace_loc:/${ProjName}/protocol/bluetooth/lib/EFR32XG12X/GCC/libbluetooth_mesh.a}"
