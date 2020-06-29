@@ -11,3 +11,4 @@ cppcheck.xml
 .history
 .config
 .gdb*
+.DS_Store
